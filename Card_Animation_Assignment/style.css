@@ -1,0 +1,257 @@
+@font-face {
+  font-family: gotham;
+  src: url(gotham/GothamMedium.woff2);
+}
+
+@font-face {
+  font-family: gotham-light;
+  src: url(gotham/GothamLight.woff2);
+}
+
+* {
+  font-family: gotham;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.heading {
+  /* background-color: aliceblue; */
+  /* padding: 1rem; */
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  font-size: 23px;
+  text-align: center;
+}
+.main-container {
+  width: 80%;
+  height: 100vh;
+  /* background-color: antiquewhite; */
+}
+
+.card-container {
+  width: 100%;
+  height: 85vh;
+  /* background-color: black; */
+}
+
+.upper-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  gap: 2rem;
+}
+
+.lower-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.card1,
+.card2,
+.card3,
+.card4 {
+  position: relative;
+  width: 310px;
+  height: 200px;
+}
+.card1 img {
+  position: relative;
+  border-radius: 5px;
+  display: flex;
+}
+
+.card1-body {
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0.7rem;
+  left: 0;
+  background-color: rgba(235, 73, 73, 0.648);
+  backdrop-filter: blur(6px);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: width 0.3s, height 0.3s;
+}
+
+.card1:hover .card1-body {
+  width: 100%;
+  height: 90%;
+}
+.card2:hover .card1-body {
+  width: 100%;
+  height: 90%;
+}
+.card3:hover .card1-body {
+  width: 100%;
+  height: 90%;
+}
+.card4:hover .card1-body {
+  width: 100%;
+  height: 90%;
+}
+.card1-title {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  opacity: 0; /* Initially hidden */
+  display: none;
+  transition: opacity 0.5s ease-in-out; /* Transition opacity */
+}
+
+.card1-info {
+  font-size: 11.5px;
+  margin: 7px 0;
+  /* font-weight: 100; */
+  font-family: gotham-light;
+  opacity: 0; /* Initially hidden */
+  text-align: center;
+  display: none;
+  transition: opacity 0.5s ease-in-out; /* Transition opacity*/
+}
+
+.card1:hover {
+  .card1-title,
+  .card1-info {
+    opacity: 1;
+    display: block;
+  }
+}
+.card2:hover {
+  .card1-title,
+  .card1-info {
+    opacity: 1;
+    display: block;
+  }
+}
+.card3:hover {
+  .card1-title,
+  .card1-info {
+    opacity: 1;
+    display: block;
+  }
+}
+.card4:hover {
+  .card1-title,
+  .card1-info {
+    opacity: 1;
+    display: block;
+  }
+}
+
+.card2 img {
+  position: relative;
+  border-radius: 5px;
+  display: flex;
+}
+.card3 img {
+  position: relative;
+  border-radius: 5px;
+  display: flex;
+}
+.card4 img {
+  position: relative;
+  border-radius: 5px;
+  display: flex;
+}
+.shadow {
+  position: relative;
+  background: linear-gradient(
+    180.68deg,
+    rgba(0, 0, 0, 0) -9.3%,
+    rgba(0, 0, 0, 0.59) 48.1%,
+    #000000 99.41%
+  );
+
+  bottom: 80px;
+  height: 40%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.shadow2 {
+  position: relative;
+  background: linear-gradient(
+    180.68deg,
+    rgba(0, 0, 0, 0) -9.3%,
+    rgba(0, 0, 0, 0.59) 48.1%,
+    #000000 99.41%
+  );
+
+  bottom: 88px;
+  height: 44%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.shadow3 {
+  position: relative;
+  background: linear-gradient(
+    180.68deg,
+    rgba(0, 0, 0, 0) -9.3%,
+    rgba(0, 0, 0, 0.59) 48.1%,
+    #000000 99.41%
+  );
+
+  bottom: 88px;
+  height: 44%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.card1 h5 {
+  position: relative;
+  bottom: 117px;
+  text-align: center;
+  font-size: 17px;
+  color: white;
+}
+.card2 h5 {
+  position: relative;
+  bottom: 134px;
+  text-align: center;
+  font-size: 17px;
+  color: white;
+}
+.card3 h5 {
+  position: relative;
+  bottom: 140px;
+  text-align: center;
+  font-size: 17px;
+  color: white;
+}
+.card4 h5 {
+  position: relative;
+  bottom: 122px;
+  text-align: center;
+  font-size: 17px;
+  color: white;
+}
+
+@media (320px <= width <= 814px) {
+  .card1:hover .card1-body {
+    bottom: 0.8rem;
+    height: 90%;
+  }
+  .card2:hover .card1-body {
+    bottom: 0.8rem;
+    height: 90%;
+  }
+  .card3:hover .card1-body {
+    bottom: 0.65rem;
+    height: 90%;
+  }
+  .card4:hover .card1-body {
+    bottom: 0.65rem;
+    height: 90%;
+  }
+}
